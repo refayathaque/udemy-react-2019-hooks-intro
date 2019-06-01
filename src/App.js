@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import ResourceList from 'ResourceList';
 
 // class App extends Component {
 //   state = { resource: 'posts', count: 0 }
@@ -36,6 +37,7 @@ const App = () => {
       <div>
         {currentCount}
       </div>
+    <ResourceList resource={resource} />
     </div>
   );
 };
@@ -44,7 +46,7 @@ export default App;
 
 // Notes:
 
-// Converting a class-based component into a functional component that can still maintain local component-level state with Hooks
+// Converting a class-based component into a functional component that can still maintain local component-level state with Hooks' `useState` function
 
 // `useState` Hook can store a single value, it need not store an object like we had to inside class-based components' state
 // To maintain multiple state values we will need to `useState` multiple times, instead of having something like `state = { value1: 'hello', value2: 'world' }`
