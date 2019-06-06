@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import ResourceList from 'ResourceList';
+import ResourceListWithHooks from 'ResourceListWithHooks';
 
 // class App extends Component {
 //   state = { resource: 'posts', count: 0 }
@@ -37,7 +37,7 @@ const App = () => {
       <div>
         {currentCount}
       </div>
-    <ResourceList resource={resource} />
+    <ResourceListWithHooks resource={resource} />
     </div>
   );
 };
