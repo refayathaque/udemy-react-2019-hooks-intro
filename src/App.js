@@ -1,5 +1,6 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import ResourceListWithHooks from 'ResourceListWithHooks';
+import UserList from 'UserList';
 
 // class App extends Component {
 //   state = { resource: 'posts', count: 0 }
@@ -26,6 +27,7 @@ const App = () => {
   const [currentCount, setCount] = useState(0)
   return (
     <div>
+      <UserList />
       <div>
         <button onClick={() => setResource('posts')}>Posts</button>
         <button onClick={() => setResource('todos')}>Todos</button>
